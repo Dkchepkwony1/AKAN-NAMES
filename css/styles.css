@@ -1,0 +1,11 @@
+body{
+  font-family: serif;
+  background-image: url(../img/backgroundimage.png);
+  color:whitesmoke;
+  font-size: 13px;
+}
+h1{
+  font-size: 40px;
+  padding-top: 15px;
+}
+
