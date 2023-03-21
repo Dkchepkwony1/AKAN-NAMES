@@ -9,7 +9,38 @@
 
 </head>
 <body>
-  
-</body>
+  <div class="compute">
+    <div class="container1">
+      <h1> Ghanian Akan Name Derivation</h1>
+      <p>This web application is used to derive the Akan name of an individual based on gender and week of brith. It has entry for user's birthday, which s picked and coverted to the day of the week, gender is also selected and outputs the Akan name</p>
+      <form class="myform" onsubmit="return getAkanName()">
+        <label for="year of birth">
+          Year:
+          <input id="year-entry" type="number" name="year of birth" placeholder="YYYY" value="" required>
+        </label>
+        <label for="month of birth">
+          Month:
+          <input id="month-entry" type="number" name="month of birth" placeholder="MM" value="" required>
+        </label>
+        <label for ="day of birth">
+          <input id="day-entery" type="number" name="day of birth" placeholder="DD" value="" required>
+        </label>
+        
+        <label for ="gender">
+          <p> Pick your gender</p>
+          Male
+          <input id="male-entry" type="radio" name="gender" value="male" required>
+          Female 
+          <input id="female-entry" type="radio" name="gender" value="female" required>
+        </label>
+      </form>
+      <form onsubmit="return clearInput()">
+        <input class="coherent" type="submit" value="Clear entry space">
+      </form>
+      <h3 id= display-name><strong>Your Akan Name is as displayed below:</strong></h3>
+      <p id="output"></p>
+    </div>
+  </div>
+  </body>
 <script src="JScript/app.js"></script>
 </html>
