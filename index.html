@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akan Name Generator</title>
-  <link href="css/styles.css" rel="stylesheet" media="all">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <link href="img/backgroundimage.png" rel="icon" type="img/jpg">
 
 </head>
 <body>
   <div class="compute">
     <div class="container1">
-      <h1> Ghanian Akan Name Derivation</h1>
-      <p>This web application is used to derive the Akan name of an individual based on gender and week of brith. It has entry for user's birthday, which s picked and coverted to the day of the week, gender is also selected and outputs the Akan name</p>
-      <form class="myForm" action="" onsubmit="return deriveName()" method="post">
+      <h1> Ghanian Akan Name Derivation!</h1>
+      <p>This web application is used to derive the Akan name of an individual based on gender and day of brith-converted to week. It has entry for user's birthday, which s picked and coverted to the day of the week, gender is also selected and outputs the Akan name</p>
+      <form name="myform" onsubmit="return deriveAkanName()">
         <label for="year-of-birth">
           Year:
           <input id="year-entry" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
@@ -27,33 +26,32 @@
           <input id="day-entry" type="number" name="day-of-birth" placeholder="DD" value="" required>
         </label>
         <br><br>
-        <label for ="gender">
-          <p><strong>Gender Selection</strong></p>
-          <select name="gender">
+        <!-- <label for ="gender"><p><strong>Gender Selection</strong></p></label>
+            <select name="gender">
             <option value=""></option>
             <option value="male">Male</option>
             <option value="female"> Female</option>
-          </select>
-        </label>
-        <!-- <label for ="gender">
+            </select> -->
+       
+        <label for ="gender">
           <p><strong>Gender Selection</strong></p>
           Male
-          <input id="male-entry" type="checkbox" name="gender" value="male" required>
+          <input id="male-input" type="radio" name="gender" value="male" required>
           Female 
-          <input id="female-entry" type="checkbox" name="gender" value="female" required> -->
-        <!-- </label> -->
+          <input id="female-input" type="radio" name="gender" value="female" required>
+        </label>
         <br><br>
-        <!-- <input id="get-name" type="submit" name="" value="Generate name"> -->
-          <button type="submit">Submit</button>
+        <input id="get-name" type="submit" name="" value="Generate name">
+          <!-- <button id="derive-name" type="submit">Generate name</button> -->
         <br><br>
       </form>
       <form onsubmit="return clearInput()">
         <input class="coherent" type="submit" value="Clear input">
       </form>
-      <h3 id= display-name><strong>Your Akan Name is as displayed below:</strong></h3>
+      <h3 id= "display-name"><strong>Your Akan Name is as displayed below:</strong></h3>
       <p id="output"></p>
     </div>
   </div>
+  <script src="/JScript/app.js"></script>
   </body>
-<script src="JScript/app.js"></script>
 </html>
