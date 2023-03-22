@@ -1,8 +1,8 @@
 body{
   font-family: serif;
-  background-image: url(../img/backgroundimage.png);
-  color:whitesmoke;
-  font-size: 13px;
+  background-color: greenyellow;
+  color:rgb(27, 27, 27);
+  font-size: 18px;
 }
 h1{
   font-size: 40px;
@@ -10,7 +10,7 @@ h1{
 }
 .container1{
   margin: auto;
-  width: 75%;
+  width: 85%;
 }
 #month-entry{
 width: 70px;
@@ -32,7 +32,7 @@ box-shadow: 4px 4px #8888;
 }
 #get-name{
   border-radius: 6px;
-  color-scheme: #E1EAA4;
+  color-scheme: #0a0a0a;
   background-color: lightslategrey;
   box-shadow: 3px 3px #7777;
   text-align: center;
@@ -56,14 +56,13 @@ box-shadow: 4px 4px #8888;
     color: wheat;
   }
   .coherent{
-    border-radius:4px;
-    color:snow;
-    box-shadow: 3px 3px #777777;
-    font-size: 11px;
-    background-color: #ffdceeff;
+    border-radius:8px;
+    color:rgb(245, 95, 8);
+    font-size: 15px;
+    background-color: rgb(253, 253, 253);
     text-align: center;
     border:solid 1.5px #999998;
     width: auto;
-    height: 35px;
-    
+    height: 20px;
+
   }
