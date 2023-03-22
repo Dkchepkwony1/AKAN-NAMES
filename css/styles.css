@@ -8,10 +8,14 @@ h1{
   font-size: 40px;
   padding-top: 15px;
 }
+  form.myForm{
+    display: table;
+  }
 .container1{
   margin: auto;
-  width: 85%;
+  width: 90%;
 }
+
 #month-entry{
 width: 70px;
 height: 25px;
@@ -47,7 +51,7 @@ box-shadow: 4px 4px #8888;
 .compute{
   background-color: rgb(216, 167, 167);
   border-radius: 1cap;
-  margin: 10px 20px auto 20px;
+  margin: 5px 5px 5px 5px;
   padding-bottom:15px;
   box-shadow: 2.5px 2.5px #98bbcc00;
   }
