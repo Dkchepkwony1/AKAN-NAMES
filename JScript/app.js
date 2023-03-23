@@ -5,7 +5,7 @@ function deriveAkanName () {
   let dayOfBirth = Number(document.getElementById("day-entry").value);
   let genders = document.getElementsByName("gender");
 
-  // function to get gender
+  // function to generate the gender
   function getGender () {
     for (let gender of genders){
       if (gender.checked){
@@ -51,7 +51,7 @@ function deriveAkanName () {
   let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
           ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
-  //creating arrays of Akan names for males & females and days of the week
+  //Arrays of Akan names for males & females and days of the week in and ordered manner. Dont change the order
   let femaleAkanNames = [
     "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
   ];
@@ -62,7 +62,7 @@ function deriveAkanName () {
     "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
   ];
 
-   //generating and index value to select items on arrays
+   //this is to make correction in the calculation of dayofweeknumber and index value to select items on arrays
   let index;
   if (dayOfWeekNumber == 0){
     index = 6;
@@ -71,13 +71,13 @@ function deriveAkanName () {
   }
 
   if (myGenderValue == "Male" && monthValid && dayValid) {
-    document.getElementById('output').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index];
-    document.getElementById('output').style.fontSize = "40px";
+    document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[index] + " , and gave you Akan name, " + maleAkanNames[index];
+    document.getElementById('output').style.fontSize = "30px";
     document.querySelector('h1').textContent = "Congratulations" + " " + maleAkanNames[index]+" ,You now know why you are called: "+ maleAkanNames[index];
     return false;
   } else if (myGenderValue == "Female" && monthValid && dayValid) {
-    document.getElementById('output').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index];
-    document.getElementById('output').style.fontSize = "40px";
+    document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[index] + " , and gave you Akan name, " + femaleAkanNames[index];
+    document.getElementById('output').style.fontSize = "30px";
     document.querySelector('h1').textContent = "Congratulations" + " " + femaleAkanNames[index]+" ,YYou now know why you are called: "+ femaleAkanNames[index];
     return false;
   } else {
