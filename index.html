@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Name Generator</title>
     <link rel="stylesheet" href="css/style.css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-    <link rel="icon" href="/img/accra-ghana-city.jpg" type="img/jpg">
+    <link rel="icon" href="/img/GhanainFlag.jpg" type="img/jpg">
   </head>
   <body>
     <div class="compute">
@@ -15,6 +16,7 @@
           A child's name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender.
           These Akan names signify the day one is born. According to Akan tradition, each child is born with a name associated to their soul. The day the child is born is therefore determined by the soul.
           The application below highlights all the popular names for both males and females from each day of the week.The application inputs date of birth and the gender and output accompanying name </p>
+          <p><span class="findout">ENTER Year/Month/Date below:</span></p>
         <form class="myform" onsubmit="return deriveAkanName()">
           <label for="year-of-birth">
             Year:<input id="year-entry" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
@@ -27,7 +29,7 @@
           </label>
           <br>
           <label for="gender">
-            <p>Select your gender: </p>
+            <p><span class="findout">Select Your Gender Below:</span></p>
             Male
             <input id="male-input" type="radio" name="gender" value="Male" required>
             Female
@@ -35,7 +37,7 @@
 
           </label>
           <br><br>
-          <input id="get-name" type="submit" name="" value="Generate name">
+          <input id="generate" type="submit" name="" value="Click Here">
           <br><br>
         </form>
         <form onsubmit="return clearInput()">
