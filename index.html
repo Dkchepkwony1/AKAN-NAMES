@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Akan Name Generator</title>
@@ -10,29 +10,28 @@
   <body>
     <div class="compute">
       <div class="container1">
-        <h1>The Akan name generator!</h1>
-        <p>Hello there! This is a web application that takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name. <a class="research" href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">Akan names</a> are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
-        <p>To find out what your Akan name is, proceed to filling the form below and clicking the generate name button.
-        <form class="myform" onsubmit="return getAkanName()">
+        <h1>Akan Name Generator!</h1>
+        <p>Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana.
+          A child's name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender.
+          These Akan names signify the day one is born. According to Akan tradition, each child is born with a name associated to their soul. The day the child is born is therefore determined by the soul.
+          The application below highlights all the popular names for both males and females from each day of the week.The application inputs date of birth and the gender and output accompanying name </p>
+        <form class="myform" onsubmit="return deriveAkanName()">
           <label for="year-of-birth">
-            Year:
-            <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+            Year:<input id="year-entry" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
           </label>
           <label for="month-of-birth">
-            Month:
-            <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+            Month:<input id="month-entry" type="number" name="month-of-birth" placeholder="MM" value="" required>
           </label>
           <label for="day-of-birth">
-            Day:
-            <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+            Day:<input id="day-entry" type="number" name="day-of-birth" placeholder="DD" value="" required>
           </label>
           <br>
           <label for="gender">
             <p>Select your gender: </p>
             Male
-            <input id="male-input" type="radio" name="gender" value="male" required>
+            <input id="male-input" type="radio" name="gender" value="Male" required>
             Female
-            <input id="female-input" type="radio" name="gender" value="female" required>
+            <input id="female-input" type="radio" name="gender" value="Female" required>
 
           </label>
           <br><br>
@@ -43,9 +42,8 @@
           <input class="clear" type="submit" value="Clear input">
         </form>
 
-
-        <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
-        <p id="result"></p>
+        <h3 id = display-name><strong>Your Akan name will be displayed below:</strong></h3>
+        <p id="output"></p>
       </div>
     </div>
 

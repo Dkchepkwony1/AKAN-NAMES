@@ -1,0 +1,84 @@
+body{
+  font-feature-settings: "vjmo";
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('/img/accra-ghana-city.jpg');
+  color: rgb(249, 252, 251);
+  font-size: 17px;  
+}
+
+h1{
+  font-size: 36px;
+  padding-top: 20px;
+}
+
+.compute{
+  background-color: rgba(206, 49, 226, 0.72);
+  margin-top: 10px;
+  margin-bottom: auto;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px #000000;
+  border-radius: 0.5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#day-entry{
+  border-radius: 5px;
+  width: 60px;
+  height: 20px;
+  box-shadow: 2px 2px #000000;
+}
+
+#get-name{
+  border-radius: 5px;
+  color: #000000;
+  background-color: #FCD116;
+  text-align: center;
+  border: solid 1px #000000;
+  width: 108px;
+  height: 32px;
+  font-size: 13px;
+  box-shadow: 2px 2px #000000;
+}
+
+#month-entry{
+  border-radius: 5px;
+  width: 60px;
+  height: 20px;
+  box-shadow: 2px 2px #000000;
+}
+#output{
+  text-align: center;
+}
+
+.container1{
+  width: 85%;
+  margin: auto;
+}
+
+.findout{
+  text-decoration: underline;
+  color: white;
+}
+
+.clear{
+  border-radius: 5px;
+  color: #000000;
+  background-color: #FCD116;
+  text-align: center;
+  border: solid 1px #000000;
+  width: 108px;
+  height: 32px;
+  font-size: 13px;
+  box-shadow: 2px 2px #000000;
+}
+
+#year-entry{
+  border-radius: 5px;
+  width: 60px;
+  height: 20px;
+  box-shadow: 2px 2px #000000;
+}
+a:hover{
+  color: #006B3F;
+}
