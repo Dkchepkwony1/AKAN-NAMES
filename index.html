@@ -1,57 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akan Name Generator</title>
-  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-  <link href="img/backgroundimage.png" rel="icon" type="img/jpg">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link rel="icon" href="/img/accra-ghana-city.jpg" type="img/jpg">
+  </head>
+  <body>
+    <div class="compute">
+      <div class="container1">
+        <h1>The Akan name generator!</h1>
+        <p>Hello there! This is a web application that takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name. <a class="research" href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">Akan names</a> are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
+        <p>To find out what your Akan name is, proceed to filling the form below and clicking the generate name button.
+        <form class="myform" onsubmit="return getAkanName()">
+          <label for="year-of-birth">
+            Year:
+            <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+          </label>
+          <label for="month-of-birth">
+            Month:
+            <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+          </label>
+          <label for="day-of-birth">
+            Day:
+            <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+          </label>
+          <br>
+          <label for="gender">
+            <p>Select your gender: </p>
+            Male
+            <input id="male-input" type="radio" name="gender" value="male" required>
+            Female
+            <input id="female-input" type="radio" name="gender" value="female" required>
 
-</head>
-<body>
-  <div class="compute">
-    <div class="container1">
-      <h1> Ghanian Akan Name Derivation!</h1>
-      <p>This web application is used to derive the Akan name of an individual based on gender and day of brith-converted to week. It has entry for user's birthday, which s picked and coverted to the day of the week, gender is also selected and outputs the Akan name</p>
-      <form name="myform" onsubmit="return deriveAkanName()">
-        <label for="year-of-birth">
-          Year:
-          <input id="year-entry" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
-        </label>
-        <label for="month-of-birth">
-          Month:
-          <input id="month-entry" type="number" name="month-of-birth" placeholder="MM" value="" required>
-        </label>
-        <label for ="day-of-birth">
-          <input id="day-entry" type="number" name="day-of-birth" placeholder="DD" value="" required>
-        </label>
-        <br><br>
-        <!-- <label for ="gender"><p><strong>Gender Selection</strong></p></label>
-            <select name="gender">
-            <option value=""></option>
-            <option value="male">Male</option>
-            <option value="female"> Female</option>
-            </select> -->
-       
-        <label for ="gender">
-          <p><strong>Gender Selection</strong></p>
-          Male
-          <input id="male-input" type="radio" name="gender" value="male" required>
-          Female 
-          <input id="female-input" type="radio" name="gender" value="female" required>
-        </label>
-        <br><br>
-        <input id="get-name" type="submit" name="" value="Generate name">
-          <!-- <button id="derive-name" type="submit">Generate name</button> -->
-        <br><br>
-      </form>
-      <form onsubmit="return clearInput()">
-        <input class="coherent" type="submit" value="Clear input">
-      </form>
-      <h3 id= "display-name"><strong>Your Akan Name is as displayed below:</strong></h3>
-      <p id="output"></p>
+          </label>
+          <br><br>
+          <input id="get-name" type="submit" name="" value="Generate name">
+          <br><br>
+        </form>
+        <form onsubmit="return clearInput()">
+          <input class="clear" type="submit" value="Clear input">
+        </form>
+
+
+        <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
+        <p id="result"></p>
+      </div>
     </div>
-  </div>
-  <script src="/JScript/app.js"></script>
+
+    <script src="JScript/app.js" ></script>
+
   </body>
 </html>
