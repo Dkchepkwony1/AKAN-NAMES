@@ -6,7 +6,7 @@ function deriveAkanName () {
   let genders = document.getElementsByName("gender");
 
   // function to generate the gender
-  function getGender () {
+  function deriveGender () {
     for (let gender of genders){
       if (gender.checked){
         return gender.value;
@@ -14,7 +14,7 @@ function deriveAkanName () {
     }
   }
 
-  let myGenderValue = getGender();
+  let myGenderValue = deriveGender();
   console.log(myGenderValue);
 
   // validation functions
@@ -43,7 +43,6 @@ function deriveAkanName () {
       return true;
     }
   }
-
   let monthValid = monthValidator();
   let dayValid = dayValidator();
 
@@ -62,23 +61,23 @@ function deriveAkanName () {
     "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
   ];
 
-   //this is to make correction in the calculation of dayofweeknumber and index value to select items on arrays
-  let index;
+   //this is to make correction in the calculation of dayofweeknumber and position value to select items on arrays
+  let position;
   if (dayOfWeekNumber == 0){
-    index = 6;
+    position = 6;
   } else {
-    index = dayOfWeekNumber - 1;
+    position = dayOfWeekNumber - 1;
   }
 
   if (myGenderValue == "Male" && monthValid && dayValid) {
-    document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[index] + " , and gave you an Akan name, " + maleAkanNames[index];
+    document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[position] + " , and gave you an Akan name, " + maleAkanNames[position];
     document.getElementById('output').style.fontSize = "30px";
-    document.querySelector('h1').textContent = "Congratulations" + " " + maleAkanNames[index]+" ,You now know why you are called: "+ maleAkanNames[index];
+    document.querySelector('h1').textContent = "Congratulations" + " " + maleAkanNames[position]+" ,You now know why you are called: "+ maleAkanNames[position];
     return false;
   } else if (myGenderValue == "Female" && monthValid && dayValid) {
-    document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[index] + " , and gave you an Akan name, " + femaleAkanNames[index];
+    document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[position] + " , and gave you an Akan name, " + femaleAkanNames[position];
     document.getElementById('output').style.fontSize = "30px";
-    document.querySelector('h1').textContent = "Congratulations" + " " + femaleAkanNames[index]+" ,YYou now know why you are called: "+ femaleAkanNames[index];
+    document.querySelector('h1').textContent = "Congratulations" + " " + femaleAkanNames[position]+" ,You now know why you are called: "+ femaleAkanNames[position];
     return false;
   } else {
     alert("You entered an invalid day or month, please try again");

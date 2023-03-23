@@ -2,7 +2,7 @@ body{
   font-feature-settings: "vjmo";
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url('/img/accra-ghana-city.jpg');
-  color: rgb(249, 252, 251);
+  color: rgb(248, 240, 240);
   font-size: 20px;  
 }
 
@@ -84,6 +84,6 @@ h1{
   box-shadow: 2px 2px #000000;
   font-weight: bolder;
 }
-a:hover{
-  color: #006B3F;
+.span{
+  text-decoration: underline;
 }
