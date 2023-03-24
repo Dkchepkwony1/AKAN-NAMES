@@ -9,9 +9,9 @@
   **Dickson Chepkwony**
 
 ## PROJECT SETUP INSTRUCTIONS
-  **Step 1-Clone this repository to your deskstop from git clone https://github.com/git@github.com:Dkchepkwony1/AKAN-NAMES.git, or download a ZIP file of the code.**
+  **Step 1-Clone this repository to your deskstop from git clone https://github.com/Dkchepkwony1/AKAN-NAMES.git, or download a ZIP file of the code.**
   **Step 2-Extra the zip to an appropriate directory and open index.html from the browser to use the application to check out your AKAN after entering your birthday and gender**
-  **Step 3- You can also acccess the code my repository https://github.com/git@github.com:Dkchepkwony1/AKAN-NAMES.git.**
+  **Step 3- You can also acccess the code my repository https://github.com/Dkchepkwony1/AKAN-NAMES.git.**
 
 ## FUTURE FEATURES AND UPDATES
 **I will improve further the layout of this web page as my coding knowledge improves**
