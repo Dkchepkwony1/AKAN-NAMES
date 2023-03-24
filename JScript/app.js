@@ -5,20 +5,8 @@ function deriveAkanName () {
   let dayOfBirth = Number(document.getElementById("day-entry").value);
   let genders = document.getElementsByName("gender");
 
-  // function to generate the gender
-  function deriveGender () {
-    for (let gender of genders){
-      if (gender.checked){
-        return gender.value;
-      }
-    }
-  }
-
-  let myGenderValue = deriveGender();
-  console.log(myGenderValue);
-
-  // validation functions
-  function monthValidator () {
+  // Month, day validation functions
+  function monthFunction () {
     if (monthOfBirth < 1 || monthOfBirth > 12) {
       return false;
     } else {
@@ -26,7 +14,7 @@ function deriveAkanName () {
     }
   }
 
-  function dayValidator () {
+  function dayFunction () {
     if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
       if (dayOfBirth > 28 || dayOfBirth < 1) {
         return false;
@@ -43,8 +31,19 @@ function deriveAkanName () {
       return true;
     }
   }
-  let monthValid = monthValidator();
-  let dayValid = dayValidator();
+  let validMonth = monthFunction();
+  let validDay = dayFunction();
+
+  // function to generate the gender
+  function deriveGender () {
+    for (let gender of genders){
+      if (gender.checked){
+        return gender.value;
+      }
+    }
+  }
+  let myGenderValue = deriveGender();
+
 
   //formula for calculating day of birth (Sunday = 1, Monday = 2)etc..
   let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
@@ -69,15 +68,15 @@ function deriveAkanName () {
     position = dayOfWeekNumber - 1;
   }
 
-  if (myGenderValue == "Male" && monthValid && dayValid) {
-    document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[position] + " , and gave you an Akan name, " + maleAkanNames[position];
-    document.getElementById('output').style.fontSize = "30px";
-    document.querySelector('h1').textContent = "Congratulations" + " " + maleAkanNames[position]+" ,You now know why you are called: "+ maleAkanNames[position];
-    return false;
-  } else if (myGenderValue == "Female" && monthValid && dayValid) {
+  if (myGenderValue == "Female" && validMonth && validDay) {
     document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[position] + " , and gave you an Akan name, " + femaleAkanNames[position];
     document.getElementById('output').style.fontSize = "30px";
     document.querySelector('h1').textContent = "Congratulations" + " " + femaleAkanNames[position]+" ,You now know why you are called: "+ femaleAkanNames[position];
+    return false;
+  } else if (myGenderValue == "Male" && validMonth && validDay) {
+    document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[position] + " , and gave you an Akan name, " + maleAkanNames[position];
+    document.getElementById('output').style.fontSize = "30px";
+    document.querySelector('h1').textContent = "Congratulations" + " " + maleAkanNames[position]+" ,You now know why you are called: "+ maleAkanNames[position];
     return false;
   } else {
     alert("You entered an invalid day or month, please try again");

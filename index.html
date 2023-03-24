@@ -14,11 +14,11 @@
         <h1>Akan Name Generator!</h1>
         <p>Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana.
           A child's name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender.
-          These Akan names signify the day one is born. According to Akan tradition, each child is born with a name associated to their soul. The day the child is born is therefore determined by the soul.
-          <br> <br>
-          The application below highlights all the popular names for both males and females from each day of the week.The application inputs date of birth and the gender and output the <strong>AKAN </strong>name:</p>
+          These Akan names signify the day one is born. According to Akan tradition, each child is born with a name associated to their soul. The day the child is born is therefore determined by the soul.</p>
+          <br>
+          <h4>The application below highlights all the popular names for both males and females from each day of the week.The application inputs date of birth and the gender and output the <strong>AKAN </strong>name:</h4>
           <h3><span class="findout">ENTER Your Date Of Birth Below:</span></h3>
-        <form class="myform" onsubmit="return deriveAkanName()">
+        <form class="myForm" onsubmit="return deriveAkanName()" target="_self">
           <label for="year-of-birth">
             Year:<input id="year-entry" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
           </label>
@@ -29,17 +29,16 @@
             Day:<input id="day-entry" type="number" name="day-of-birth" placeholder="DD" value="" required>
           </label>
           <br>
+
           <label for="gender">
             <p><span class="findout">Select Your Gender Below:</span></p>
-            Male
-            <input id="male-input" type="radio" name="gender" value="Male" required>
-            Female
-            <input id="female-input" type="radio" name="gender" value="Female" required>
-
+            Male   <input id="male-input" type="radio" name="gender" value="Male" required>
+            Female <input id="female-input" type="radio" name="gender" value="Female" required>
           </label>
           <br>
           <p>Click <strong class="span">'Click Here'</strong> button after entry of dateOfBirday and gender to generate your AKAN name</p>
           <input id="generate" type="submit" name="" value="Click Here">
+
           <br><br>
         </form>
         <form onsubmit="return clearInput()">
@@ -52,6 +51,6 @@
     </div>
 
     <script src="JScript/app.js" ></script>
-
+  
   </body>
 </html>
