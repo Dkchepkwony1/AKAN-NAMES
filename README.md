@@ -1,7 +1,7 @@
 # AKAN NAME GENERATING CODE
       
 ### Author Dickson Kiplangat Chepkwony
-  **[AKAN NAME GENERATION WEBPAGE](https://github.com/git@github.com:Dkchepkwony1/AKAN-NAMES.git "Dickson Chepkwony")**
+  **[AKAN NAME GENERATION WEBPAGE](https://dkchepkwony1.github.io/AKAN-NAMES/ "Dickson Chepkwony")**
 
 ## DESCRIPTION
   **Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child's name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender.**
