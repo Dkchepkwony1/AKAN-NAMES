@@ -16,7 +16,7 @@
 ## FUTURE FEATURES AND UPDATES
 **I will improve further the layout of this web page as my coding knowledge improves**
 
-## Technologies used
+## TECHNOLOGIES USED
 <ul>
   <li>HTML</li>
   <li>CSS</li>
@@ -28,7 +28,7 @@
 ## SUPPORT AND CONTACTS
   **For any inquiries, assist to improve on this code, reach me on dickchep@yahoo.com**
 
-<h1><strong>COPYRIGHT AND LICENCES</strong></h1>
+<h2><strong>COPYRIGHT AND LICENCES</strong></h2>  
 <ul>
   <li>MIT Licence</li>
   <li>Copyright Dickson Chepkwony 2023</li>
