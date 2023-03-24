@@ -3,17 +3,17 @@
 ### Author Dickson Kiplangat Chepkwony
   **[AKAN NAME GENERATION WEBPAGE](https://github.com/git@github.com:Dkchepkwony1/AKAN-NAMES.git "Dickson Chepkwony")**
 
-## Description
+## DESCRIPTION
   **Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child's name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender.**
 ## Contributors
   **Dickson Chepkwony**
 
-## Project setup instructions
-  **Step 1-Clone this repository to your deskstop from git clone https://github.com/git@github.com:Dkchepkwony1/AKAN-NAMES.git, or downloading a ZIP file of the code.**
-  **Step 2-Extra the zip to an appropriate directory and open index.html from the browser to checkout my code**
+## PROJECT SETUP INSTRUCTIONS
+  **Step 1-Clone this repository to your deskstop from git clone https://github.com/git@github.com:Dkchepkwony1/AKAN-NAMES.git, or download a ZIP file of the code.**
+  **Step 2-Extra the zip to an appropriate directory and open index.html from the browser to use the application to check out your AKAN after entering your birthday and gender**
   **Step 3- You can also acccess the code my repository https://github.com/git@github.com:Dkchepkwony1/AKAN-NAMES.git.**
 
-## Future features and updates
+## FUTURE FEATURES AND UPDATES
 **I will improve further the layout of this web page as my coding knowledge improves**
 
 ## Technologies used
@@ -25,10 +25,10 @@
   <li>Javascript</li>
 </ul>
 
-## Support and contacts
+## SUPPORT AND CONTACTS
   **For any inquiries, assist to improve on this code, reach me on dickchep@yahoo.com**
 
-<h1><strong>Copyright and License</strong></h1>
+<h1><strong>COPYRIGHT AND LICENCES</strong></h1>
 <ul>
   <li>MIT Licence</li>
   <li>Copyright Dickson Chepkwony 2023</li>
