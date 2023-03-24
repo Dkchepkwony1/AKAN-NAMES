@@ -71,11 +71,13 @@ function deriveAkanName () {
   if (myGenderValue == "Female" && validMonth && validDay) {
     document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[position] + " , and gave you an Akan name, " + femaleAkanNames[position];
     document.getElementById('output').style.fontSize = "30px";
+    document.getElementById('output').style.color="blue";
     document.querySelector('h1').textContent = "Congratulations" + " " + femaleAkanNames[position]+" ,You now know why you are called: "+ femaleAkanNames[position];
     return false;
   } else if (myGenderValue == "Male" && validMonth && validDay) {
     document.getElementById('output').textContent = "Your mother delivered you on " + daysOfWeek[position] + " , and gave you an Akan name, " + maleAkanNames[position];
     document.getElementById('output').style.fontSize = "30px";
+    document.getElementById('output').style.color="blue";
     document.querySelector('h1').textContent = "Congratulations" + " " + maleAkanNames[position]+" ,You now know why you are called: "+ maleAkanNames[position];
     return false;
   } else {

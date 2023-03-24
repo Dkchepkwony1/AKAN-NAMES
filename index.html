@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Name Generator</title>
     <link rel="stylesheet" href="css/style.css" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> -->
     <link rel="icon" href="/img/GhanainFlag.jpg" type="img/jpg">
   </head>
   <body>
@@ -37,7 +37,7 @@
           </label>
           <br>
           <p>Click <strong class="span">'Click Here'</strong> button after entry of dateOfBirday and gender to generate your AKAN name</p>
-          <input id="generate" type="submit" name="" onsubmit="myFunction()" value="Click Here">
+          <input id="generate" type="submit" name="" value="Click Here" onsubmit="return clearInput()">
 
           <br><br>
         </form>
@@ -45,7 +45,7 @@
           <input class="clear" type="submit" value="Clear input">
         </form>
 
-        <h3 id="output"><strong>Your Akan name will be displayed Here when you 'click here' box:</strong></h3>
+        <h3 id="output"><strong>Your Akan name will be displayed Here when you 'click here':</strong></h3>
         <p id="output"></p>
       </div>
     </div>
