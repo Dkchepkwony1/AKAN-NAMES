@@ -1,57 +1,57 @@
-body{
+body {
   font-feature-settings: "vjmo";
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url('/img/accra-ghana-city.jpg');
   color: rgb(248, 240, 240);
-  font-size: 20px;  
+  font-size: 25px;  
 }
 
-h1{
+h1 {
   font-size: 36px;
   padding-top: 20px;
 }
 
-.compute{
+.compute {
   background-color: rgba(206, 49, 226, 0.72);
   margin-top: 10px;
   margin-bottom: auto;
   padding-bottom: 20px;
   box-shadow: 2px 2px #000000;
-  border-radius: 0.5%;
+  border-radius: 1.5%;
   margin-left: 15%;
   margin-right: 15%;
 }
 
-#day-entry{
+#day-entry {
   border-radius: 5px;
   width: 60px;
   height: 20px;
   box-shadow: 2px 2px #000000;
 }
 
-#month-entry{
+#month-entry {
   border-radius: 5px;
   width: 60px;
   height: 20px;
   box-shadow: 2px 2px #000000;
 }
-#output{
+#output {
   text-align: center;
   font-size: larger;
 }
 
-.container1{
+.container1 {
   width: 85%;
   margin: auto;
 }
 
-.findout{
+.findout {
   text-decoration: underline;
   color: white;
   font-weight: bolder;
 }
 
-.clear{
+.clear {
   border-radius: 5px;
   color: #fcfdfd;
   background-color: rgba(206, 49, 226, 0.72);
@@ -64,14 +64,14 @@ h1{
   box-shadow: 2px 2px #000000;
 }
 
-#year-entry{
+#year-entry {
   border-radius: 5px;
   width: 60px;
   height: 20px;
   box-shadow: 2px 2px #000000;
 }
 
-#generate{
+#generate {
   border-radius: 5px;
   color:whitesmoke;
   word-wrap: break-word;
@@ -84,6 +84,6 @@ h1{
   box-shadow: 2px 2px #000000;
   font-weight: bolder;
 }
-.span{
+.span {
   text-decoration: underline;
 }
