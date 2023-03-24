@@ -18,21 +18,21 @@
           <br>
           <h4>The application below highlights all the popular names for both males and females from each day of the week.The application inputs date of birth and the gender and output the <strong>AKAN </strong>name:</h4>
           <h3><span class="findout">ENTER Your Date Of Birth Below:</span></h3>
-        <form class="myForm" onsubmit="return deriveAkanName()" target="_self">
-          <label for="year-of-birth">
-            Year:<input id="year-entry" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+        <form class="myForm" onsubmit="return deriveAkanName()" target="_self">        
+          <label for="day-of-birth">
+            Day:<input id="day-entry" type="number" name="day-of-birth" placeholder="DD" value="" required>
           </label>
+          <label for="year-of-birth">
           <label for="month-of-birth">
             Month:<input id="month-entry" type="number" name="month-of-birth" placeholder="MM" value="" required>
           </label>
-          <label for="day-of-birth">
-            Day:<input id="day-entry" type="number" name="day-of-birth" placeholder="DD" value="" required>
+            Year:<input id="year-entry" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
           </label>
           <br>
           <label for="gender">
             <p><span class="findout">Select Your Gender Below:</span></p>
-            Male   <input id="male-input" type="radio" name="gender" value="Male" required>
-            Female <input id="female-input" type="radio" name="gender" value="Female" required>
+            Female   <input id="male-input" type="radio" name="gender" value="Male" required>
+            Male <input id="female-input" type="radio" name="gender" value="Female" required>
           </label>
           <br>
           <p>Click <strong class="span">'Click Here'</strong> button after entering your dateOfBirday and gender to generate your AKAN name</p>

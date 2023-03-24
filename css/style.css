@@ -1,6 +1,6 @@
 body {
   font-feature-settings: "vjmo";
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   background-image: url('/img/accra-ghana-city.jpg');
   color: rgb(248, 240, 240);
   font-size: 25px;  
@@ -12,7 +12,7 @@ h1 {
 }
 
 .compute {
-  background-color: rgba(206, 49, 226, 0.72);
+  background-color: rgba(227, 54, 250, 0.774);
   margin-top: 10px;
   margin-bottom: auto;
   padding-bottom: 20px;
@@ -24,14 +24,14 @@ h1 {
 
 #day-entry {
   border-radius: 5px;
-  width: 60px;
+  width: 80px;
   height: 20px;
   box-shadow: 2px 2px #000000;
 }
 
 #month-entry {
   border-radius: 5px;
-  width: 60px;
+  width: 80px;
   height: 20px;
   box-shadow: 2px 2px #000000;
 }
@@ -66,7 +66,7 @@ h1 {
 
 #year-entry {
   border-radius: 5px;
-  width: 60px;
+  width: 80px;
   height: 20px;
   box-shadow: 2px 2px #000000;
 }
